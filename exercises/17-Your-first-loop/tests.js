@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 const path = require('path');
 
@@ -11,13 +10,13 @@ let _log = console.log;
 // but we are also going to save what supposed to be the ouput of the console inside _buffer
 global.console.log = console.log = jest.fn((text) => _buffer += text + "\n");
 
-describe('All the javascript should match', function () {
+describe('All the javascript should match', function() {
     beforeEach(() => {
         //here I import the HTML into the document
     });
     afterEach(() => { jest.resetModules(); });
 
-    it('console.log() function to be called 101 times and once with argument 100', function () {
+    it('console.log() function to be called 101 times and once with argument 100', function() {
 
         const file = require("./app.js");
 
