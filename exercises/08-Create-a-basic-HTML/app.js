@@ -8,6 +8,6 @@ const g = '<title>';
 const h = '<body>';
 
 //Modify this variable
-let htmlDocument = '';
+let htmlDocument = b.concat(c, a, a, d, b, );
 
 console.log(htmlDocument);
